@@ -1,0 +1,8 @@
+../Src/playground.c:17:6:playground_init	4	static
+../Src/playground.c:38:6:delay_ms	24	static
+../Src/playground.c:50:6:led_on	16	static
+../Src/playground.c:59:6:led_off	16	static
+../Src/playground.c:68:6:led_toggle	16	static
+../Src/playground.c:80:6:led_blink_experiment	8	static
+../Src/playground.c:101:6:led_sequence_experiment	8	static
+../Src/playground.c:122:6:led_fade_experiment	32	static

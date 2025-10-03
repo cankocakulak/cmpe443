@@ -1,0 +1,9 @@
+../Src/breadboard_experiment.c:26:6:breadboard_delay	24	static
+../Src/breadboard_experiment.c:33:6:led_init	4	static
+../Src/breadboard_experiment.c:53:6:led_on	4	static
+../Src/breadboard_experiment.c:58:6:led_off	4	static
+../Src/breadboard_experiment.c:63:6:simple_blink	8	static
+../Src/breadboard_experiment.c:75:6:led_always_on	8	static
+../Src/breadboard_experiment.c:85:6:super_slow_blink	16	static
+../Src/breadboard_experiment.c:105:6:fast_blink	8	static
+../Src/breadboard_experiment.c:117:6:sos_pattern	24	static

@@ -1,0 +1,371 @@
+20:49:26 **** Incremental Build of configuration Debug for project firstProject ****
+make -j11 all 
+arm-none-eabi-size  firstProject.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1008	      0	   1568	   2576	    a10	firstProject.elf
+Finished building: default.size.stdout
+ 
+20:55:35 **** Incremental Build of configuration Debug for project firstProject ****
+make -j11 all 
+arm-none-eabi-size  firstProject.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1008	      0	   1568	   2576	    a10	firstProject.elf
+Finished building: default.size.stdout
+ 
+21:02:07 **** Incremental Build of configuration Debug for project firstProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "firstProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/firstProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="firstProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: firstProject.elf
+ 
+arm-none-eabi-size  firstProject.elf 
+arm-none-eabi-objdump -h -S firstProject.elf  > "firstProject.list"
+   text	   data	    bss	    dec	    hex	filename
+   1008	      0	   1568	   2576	    a10	firstProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: firstProject.list
+ 
+21:02:43 **** Incremental Build of configuration Debug for project firstProject ****
+make -j11 all 
+arm-none-eabi-size  firstProject.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1008	      0	   1568	   2576	    a10	firstProject.elf
+Finished building: default.size.stdout
+ 
+21:03:39 **** Incremental Build of configuration Debug for project firstProject ****
+make -j11 all 
+arm-none-eabi-size  firstProject.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1008	      0	   1568	   2576	    a10	firstProject.elf
+Finished building: default.size.stdout
+ 
+21:03:54 **** Incremental Build of configuration Debug for project firstProject ****
+make -j11 all 
+arm-none-eabi-size  firstProject.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1008	      0	   1568	   2576	    a10	firstProject.elf
+Finished building: default.size.stdout
+ 
+21:05:52 **** Incremental Build of configuration Debug for project firstProject ****
+make -j11 all 
+arm-none-eabi-size  firstProject.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1008	      0	   1568	   2576	    a10	firstProject.elf
+Finished building: default.size.stdout
+ 
+21:06:54 **** Incremental Build of configuration Debug for project firstProject ****
+make -j11 all 
+arm-none-eabi-size  firstProject.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1008	      0	   1568	   2576	    a10	firstProject.elf
+Finished building: default.size.stdout
+ 
+21:09:52 **** Incremental Build of configuration Debug for project firstProject ****
+make -j11 all 
+arm-none-eabi-size  firstProject.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1008	      0	   1568	   2576	    a10	firstProject.elf
+Finished building: default.size.stdout
+ 
+22:15:37 **** Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc -mcpu=cortex-m33 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32l552zetxq.d" -MT"Startup/startup_stm32l552zetxq.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32l552zetxq.o" "../Startup/startup_stm32l552zetxq.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+    756	      0	   1568	   2324	    914	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+22:15:58 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-size  secondProject.elf 
+   text	   data	    bss	    dec	    hex	filename
+    756	      0	   1568	   2324	    914	secondProject.elf
+Finished building: default.size.stdout
+ 
+22:16:45 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+   1008	      0	   1568	   2576	    a10	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+22:26:31 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/new_experiment_template.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/new_experiment_template.d" -MT"Src/new_experiment_template.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/new_experiment_template.o"
+arm-none-eabi-gcc "../Src/playground.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/playground.d" -MT"Src/playground.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/playground.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+   1132	      0	   1568	   2700	    a8c	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+22:36:11 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/new_experiment_template.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/new_experiment_template.d" -MT"Src/new_experiment_template.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/new_experiment_template.o"
+arm-none-eabi-gcc "../Src/playground.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/playground.d" -MT"Src/playground.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/playground.o"
+arm-none-eabi-gcc "../Src/simple_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/simple_experiment.d" -MT"Src/simple_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/simple_experiment.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+   1040	      0	   1568	   2608	    a30	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+22:37:36 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/simple_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/simple_experiment.d" -MT"Src/simple_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/simple_experiment.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+   1036	      0	   1568	   2604	    a2c	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+22:39:56 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/simple_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/simple_experiment.d" -MT"Src/simple_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/simple_experiment.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+22:40:26 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+23:13:38 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/simple_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/simple_experiment.d" -MT"Src/simple_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/simple_experiment.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+    976	      0	   1568	   2544	    9f0	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+23:21:54 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+    872	      0	   1568	   2440	    988	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+23:43:36 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+    872	      0	   1568	   2440	    988	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+23:43:56 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+    976	      0	   1568	   2544	    9f0	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+23:51:53 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+    976	      0	   1568	   2544	    9f0	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+23:56:27 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+   1024	      0	   1568	   2592	    a20	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+00:02:25 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+    976	      0	   1568	   2544	    9f0	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+00:05:43 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+    872	      0	   1568	   2440	    988	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+00:07:19 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+    976	      0	   1568	   2544	    9f0	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+00:14:01 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+   1104	      0	   1568	   2672	    a70	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+00:17:28 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+    932	      0	   1568	   2500	    9c4	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+00:18:12 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+   1032	      0	   1568	   2600	    a28	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 

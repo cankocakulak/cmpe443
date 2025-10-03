@@ -1,0 +1,6 @@
+"./Src/breadboard_experiment.o"
+"./Src/main.o"
+"./Src/simple_experiment.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32l552zetxq.o"

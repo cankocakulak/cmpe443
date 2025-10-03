@@ -1,0 +1,17 @@
+00:18:12 **** Incremental Build of configuration Debug for project secondProject ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: secondProject.elf
+ 
+arm-none-eabi-size  secondProject.elf 
+arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+   text	   data	    bss	    dec	    hex	filename
+   1032	      0	   1568	   2600	    a28	secondProject.elf
+Finished building: default.size.stdout
+ 
+Finished building: secondProject.list
+ 
+
+00:18:13 Build Finished. 0 errors, 0 warnings. (took 457ms)
+

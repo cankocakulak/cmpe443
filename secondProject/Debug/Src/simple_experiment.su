@@ -1,0 +1,4 @@
+../Src/simple_experiment.c:12:6:simple_delay	24	static
+../Src/simple_experiment.c:19:6:led_sequence	8	static
+../Src/simple_experiment.c:52:6:led_blink_original	8	static
+../Src/simple_experiment.c:87:6:led_alternate	8	static

@@ -1,371 +1,395 @@
-20:49:26 **** Incremental Build of configuration Debug for project firstProject ****
-make -j11 all 
-arm-none-eabi-size  firstProject.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1008	      0	   1568	   2576	    a10	firstProject.elf
-Finished building: default.size.stdout
- 
-20:55:35 **** Incremental Build of configuration Debug for project firstProject ****
-make -j11 all 
-arm-none-eabi-size  firstProject.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1008	      0	   1568	   2576	    a10	firstProject.elf
-Finished building: default.size.stdout
- 
-21:02:07 **** Incremental Build of configuration Debug for project firstProject ****
+00:30:57 **** Incremental Build of configuration Debug for project p3_pre ****
 make -j11 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "firstProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/firstProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="firstProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: firstProject.elf
+../Src/main.c:24:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   24 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "p3_pre.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/p3_pre/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="p3_pre.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: p3_pre.elf
  
-arm-none-eabi-size  firstProject.elf 
-arm-none-eabi-objdump -h -S firstProject.elf  > "firstProject.list"
+arm-none-eabi-size  p3_pre.elf 
+arm-none-eabi-objdump -h -S p3_pre.elf  > "p3_pre.list"
    text	   data	    bss	    dec	    hex	filename
-   1008	      0	   1568	   2576	    a10	firstProject.elf
+    936	      0	   1568	   2504	    9c8	p3_pre.elf
 Finished building: default.size.stdout
  
-Finished building: firstProject.list
+Finished building: p3_pre.list
  
-21:02:43 **** Incremental Build of configuration Debug for project firstProject ****
-make -j11 all 
-arm-none-eabi-size  firstProject.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1008	      0	   1568	   2576	    a10	firstProject.elf
-Finished building: default.size.stdout
- 
-21:03:39 **** Incremental Build of configuration Debug for project firstProject ****
-make -j11 all 
-arm-none-eabi-size  firstProject.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1008	      0	   1568	   2576	    a10	firstProject.elf
-Finished building: default.size.stdout
- 
-21:03:54 **** Incremental Build of configuration Debug for project firstProject ****
-make -j11 all 
-arm-none-eabi-size  firstProject.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1008	      0	   1568	   2576	    a10	firstProject.elf
-Finished building: default.size.stdout
- 
-21:05:52 **** Incremental Build of configuration Debug for project firstProject ****
-make -j11 all 
-arm-none-eabi-size  firstProject.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1008	      0	   1568	   2576	    a10	firstProject.elf
-Finished building: default.size.stdout
- 
-21:06:54 **** Incremental Build of configuration Debug for project firstProject ****
-make -j11 all 
-arm-none-eabi-size  firstProject.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1008	      0	   1568	   2576	    a10	firstProject.elf
-Finished building: default.size.stdout
- 
-21:09:52 **** Incremental Build of configuration Debug for project firstProject ****
-make -j11 all 
-arm-none-eabi-size  firstProject.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1008	      0	   1568	   2576	    a10	firstProject.elf
-Finished building: default.size.stdout
- 
-22:15:37 **** Build of configuration Debug for project secondProject ****
+00:55:15 **** Build of configuration Debug for project project_try ****
 make -j11 all 
 arm-none-eabi-gcc -mcpu=cortex-m33 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32l552zetxq.d" -MT"Startup/startup_stm32l552zetxq.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32l552zetxq.o" "../Startup/startup_stm32l552zetxq.s"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/practice1_gpio.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/practice1_gpio.d" -MT"Src/practice1_gpio.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/practice1_gpio.o"
+arm-none-eabi-gcc "../Src/practice2_timers.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/practice2_timers.d" -MT"Src/practice2_timers.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/practice2_timers.o"
+arm-none-eabi-gcc "../Src/practice3_adc.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/practice3_adc.d" -MT"Src/practice3_adc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/practice3_adc.o"
+arm-none-eabi-gcc "../Src/project.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/project.d" -MT"Src/project.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/project.o"
 arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
 arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
-   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+../Src/main.c:24:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   24 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
       |    ^~~~~~~
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-    756	      0	   1568	   2324	    914	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-22:15:58 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-size  secondProject.elf 
-   text	   data	    bss	    dec	    hex	filename
-    756	      0	   1568	   2324	    914	secondProject.elf
-Finished building: default.size.stdout
- 
-22:16:45 **** Incremental Build of configuration Debug for project secondProject ****
+../Src/practice1_gpio.c: In function 'write_to_7s':
+../Src/practice1_gpio.c:22:1: error: unknown type name 'value'
+   22 | value into 32 32-bit.
+      | ^~~~~
+../Src/practice1_gpio.c:22:12: error: expected '=', ',', ';', 'asm' or '__attribute__' before numeric constant
+   22 | value into 32 32-bit.
+      |            ^~
+../Src/practice1_gpio.c:25:1: error: 'value' undeclared (first use in this function); did you mean 'value8_t'?
+   25 | value = value << shift;
+      | ^~~~~
+      | value8_t
+../Src/practice1_gpio.c:25:1: note: each undeclared identifier is reported only once for each function it appears in
+../Src/practice1_gpio.c:19:9: warning: unused variable 'value8_t' [-Wunused-variable]
+   19 | uint8_t value8_t = seven_segment[number];
+      |         ^~~~~~~~
+../Src/practice1_gpio.c: In function 'practice1_main':
+../Src/practice1_gpio.c:41:1: error: 'practice' undeclared (first use in this function)
+   41 | practice.
+      | ^~~~~~~~
+../Src/practice1_gpio.c:12:21: error: expected identifier before '*' token
+   12 | #define GPIOC_MODER *((volatile uint32_t *) GPIOC_BASE)
+      |                     ^
+../Src/practice1_gpio.c:42:1: note: in expansion of macro 'GPIOC_MODER'
+   42 | GPIOC_MODER &= ~(0b11 << (0 * 2));
+      | ^~~~~~~~~~~
+../Src/practice1_gpio.c:46:1: error: unknown type name 'result'
+   46 | result is non-zero.
+      | ^~~~~~
+../Src/practice1_gpio.c:46:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'non'
+   46 | result is non-zero.
+      |           ^~~
+../Src/practice1_gpio.c:50:3: error: 'else' without a previous 'if'
+   50 | } else {
+      |   ^~~~
+../Src/project.c: In function 'pi1_compute_random_wait_ms':
+../Src/project.c:74:41: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   74 |     printf("[PI1] Random wait chosen = %ums\n", res);
+      |                                        ~^       ~~~
+      |                                         |       |
+      |                                         |       uint32_t {aka long unsigned int}
+      |                                         unsigned int
+      |                                        %lu
+../Src/project.c: In function 'pi1_7seg_show_ms':
+../Src/project.c:93:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   93 |     printf("[PI1] 7SEG: %s = %u ms\n", label, ms);
+      |                              ~^               ~~
+      |                               |               |
+      |                               unsigned int    uint32_t {aka long unsigned int}
+      |                              %lu
+../Src/project.c: In function 'pi2_capture_visual_ms':
+../Src/project.c:148:42: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  148 |         printf("[PI2] Visual timeout (> %u ms)\n", window_ms);
+      |                                         ~^         ~~~~~~~~~
+      |                                          |         |
+      |                                          |         uint32_t {aka long unsigned int}
+      |                                          unsigned int
+      |                                         %lu
+../Src/project.c:151:47: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  151 |     printf("[PI2] Visual reaction captured = %u ms\n", base);
+      |                                              ~^        ~~~~
+      |                                               |        |
+      |                                               |        uint32_t {aka long unsigned int}
+      |                                               unsigned int
+      |                                              %lu
+../Src/project.c: In function 'pi3_capture_tactile_ms':
+../Src/project.c:174:57: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  174 |         printf("[PI3] Tactile timeout (no press within %u ms)\n", window_ms);
+      |                                                        ~^         ~~~~~~~~~
+      |                                                         |         |
+      |                                                         |         uint32_t {aka long unsigned int}
+      |                                                         unsigned int
+      |                                                        %lu
+../Src/project.c:187:50: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  187 |         printf("[PI3] Tactile timeout (computed %u > %u)\n", t, window_ms);
+      |                                                 ~^           ~
+      |                                                  |           |
+      |                                                  |           uint32_t {aka long unsigned int}
+      |                                                  unsigned int
+      |                                                 %lu
+../Src/project.c:187:55: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  187 |         printf("[PI3] Tactile timeout (computed %u > %u)\n", t, window_ms);
+      |                                                      ~^         ~~~~~~~~~
+      |                                                       |         |
+      |                                                       |         uint32_t {aka long unsigned int}
+      |                                                       unsigned int
+      |                                                      %lu
+../Src/project.c:190:48: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  190 |     printf("[PI3] Tactile reaction captured = %u ms\n", t);
+      |                                               ~^        ~
+      |                                                |        |
+      |                                                |        uint32_t {aka long unsigned int}
+      |                                                unsigned int
+      |                                               %lu
+../Src/project.c: In function 'pi3_uart_send_result':
+../Src/project.c:202:37: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  202 |     printf("[PI3][UART %d bps] Rnd=%u, Wait=%u, Vis=%u, Tact=%u, Total=%u, Best=%u\n",
+      |                                    ~^
+      |                                     |
+      |                                     unsigned int
+      |                                    %lu
+  203 |            UART_BAUD, rnd, wait_ms, vis_ms, tact_ms, total_ms, best_ms);
+      |                       ~~~            
+      |                       |
+      |                       uint32_t {aka long unsigned int}
+../Src/project.c:202:46: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  202 |     printf("[PI3][UART %d bps] Rnd=%u, Wait=%u, Vis=%u, Tact=%u, Total=%u, Best=%u\n",
+      |                                             ~^
+      |                                              |
+      |                                              unsigned int
+      |                                             %lu
+  203 |            UART_BAUD, rnd, wait_ms, vis_ms, tact_ms, total_ms, best_ms);
+      |                            ~~~~~~~            
+      |                            |
+      |                            uint32_t {aka long unsigned int}
+../Src/project.c:202:54: warning: format '%u' expects argument of type 'unsigned int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  202 |     printf("[PI3][UART %d bps] Rnd=%u, Wait=%u, Vis=%u, Tact=%u, Total=%u, Best=%u\n",
+      |                                                     ~^
+      |                                                      |
+      |                                                      unsigned int
+      |                                                     %lu
+  203 |            UART_BAUD, rnd, wait_ms, vis_ms, tact_ms, total_ms, best_ms);
+      |                                     ~~~~~~            
+      |                                     |
+      |                                     uint32_t {aka long unsigned int}
+../Src/project.c:202:63: warning: format '%u' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  202 |     printf("[PI3][UART %d bps] Rnd=%u, Wait=%u, Vis=%u, Tact=%u, Total=%u, Best=%u\n",
+      |                                                              ~^
+      |                                                               |
+      |                                                               unsigned int
+      |                                                              %lu
+  203 |            UART_BAUD, rnd, wait_ms, vis_ms, tact_ms, total_ms, best_ms);
+      |                                             ~~~~~~~            
+      |                                             |
+      |                                             uint32_t {aka long unsigned int}
+../Src/project.c:202:73: warning: format '%u' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  202 |     printf("[PI3][UART %d bps] Rnd=%u, Wait=%u, Vis=%u, Tact=%u, Total=%u, Best=%u\n",
+      |                                                                        ~^
+      |                                                                         |
+      |                                                                         unsigned int
+      |                                                                        %lu
+  203 |            UART_BAUD, rnd, wait_ms, vis_ms, tact_ms, total_ms, best_ms);
+      |                                                      ~~~~~~~~            
+      |                                                      |
+      |                                                      uint32_t {aka long unsigned int}
+../Src/project.c:202:82: warning: format '%u' expects argument of type 'unsigned int', but argument 8 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  202 |     printf("[PI3][UART %d bps] Rnd=%u, Wait=%u, Vis=%u, Tact=%u, Total=%u, Best=%u\n",
+      |                                                                                 ~^
+      |                                                                                  |
+      |                                                                                  unsigned int
+      |                                                                                 %lu
+  203 |            UART_BAUD, rnd, wait_ms, vis_ms, tact_ms, total_ms, best_ms);
+      |                                                                ~~~~~~~            
+      |                                                                |
+      |                                                                uint32_t {aka long unsigned int}
+../Src/project.c: In function 'project_main':
+../Src/project.c:336:32: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  336 |         printf("\n----- Round %u -----\n", g_round_ix);
+      |                               ~^           ~~~~~~~~~~
+      |                                |           |
+      |                                |           uint32_t {aka long unsigned int}
+      |                                unsigned int
+      |                               %lu
+../Src/project.c:340:36: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  340 |     printf("\nBest total so far = %u ms\n", g_best_total_ms);
+      |                                   ~^        ~~~~~~~~~~~~~~~
+      |                                    |        |
+      |                                    |        uint32_t {aka long unsigned int}
+      |                                    unsigned int
+      |                                   %lu
+make: *** [Src/subdir.mk:37: Src/practice1_gpio.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+00:56:04 **** Incremental Build of configuration Debug for project p3_pre ****
 make -j11 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
+../Src/main.c:24:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   24 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "p3_pre.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/p3_pre/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="p3_pre.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: p3_pre.elf
  
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+arm-none-eabi-size  p3_pre.elf 
+arm-none-eabi-objdump -h -S p3_pre.elf  > "p3_pre.list"
    text	   data	    bss	    dec	    hex	filename
-   1008	      0	   1568	   2576	    a10	secondProject.elf
+    936	      0	   1568	   2504	    9c8	p3_pre.elf
 Finished building: default.size.stdout
  
-Finished building: secondProject.list
+Finished building: p3_pre.list
  
-22:26:31 **** Incremental Build of configuration Debug for project secondProject ****
+01:08:54 **** Incremental Build of configuration Debug for project p3_pre ****
 make -j11 all 
+arm-none-eabi-size  p3_pre.elf 
+   text	   data	    bss	    dec	    hex	filename
+    936	      0	   1568	   2504	    9c8	p3_pre.elf
+Finished building: default.size.stdout
+ 
+01:10:38 **** Incremental Build of configuration Debug for project project_try ****
+make -j11 all 
+arm-none-eabi-gcc -mcpu=cortex-m33 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32l552zetxq.d" -MT"Startup/startup_stm32l552zetxq.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32l552zetxq.o" "../Startup/startup_stm32l552zetxq.s"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/new_experiment_template.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/new_experiment_template.d" -MT"Src/new_experiment_template.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/new_experiment_template.o"
-arm-none-eabi-gcc "../Src/playground.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/playground.d" -MT"Src/playground.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/playground.o"
+arm-none-eabi-gcc "../Src/practice1_gpio.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/practice1_gpio.d" -MT"Src/practice1_gpio.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/practice1_gpio.o"
+arm-none-eabi-gcc "../Src/practice2_timers.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/practice2_timers.d" -MT"Src/practice2_timers.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/practice2_timers.o"
+arm-none-eabi-gcc "../Src/practice3_adc.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/practice3_adc.d" -MT"Src/practice3_adc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/practice3_adc.o"
+arm-none-eabi-gcc "../Src/project.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/project.d" -MT"Src/project.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/project.o"
 arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
 arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
+../Src/main.c:24:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   24 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/project.c: In function 'pi1_compute_random_wait_ms':
+../Src/project.c:74:41: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   74 |     printf("[PI1] Random wait chosen = %ums\n", res);
+      |                                        ~^       ~~~
+      |                                         |       |
+      |                                         |       uint32_t {aka long unsigned int}
+      |                                         unsigned int
+      |                                        %lu
+../Src/project.c: In function 'pi1_7seg_show_ms':
+../Src/project.c:93:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   93 |     printf("[PI1] 7SEG: %s = %u ms\n", label, ms);
+      |                              ~^               ~~
+      |                               |               |
+      |                               unsigned int    uint32_t {aka long unsigned int}
+      |                              %lu
+../Src/project.c: In function 'pi2_capture_visual_ms':
+../Src/project.c:148:42: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  148 |         printf("[PI2] Visual timeout (> %u ms)\n", window_ms);
+      |                                         ~^         ~~~~~~~~~
+      |                                          |         |
+      |                                          |         uint32_t {aka long unsigned int}
+      |                                          unsigned int
+      |                                         %lu
+../Src/project.c:151:47: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  151 |     printf("[PI2] Visual reaction captured = %u ms\n", base);
+      |                                              ~^        ~~~~
+      |                                               |        |
+      |                                               |        uint32_t {aka long unsigned int}
+      |                                               unsigned int
+      |                                              %lu
+../Src/project.c: In function 'pi3_capture_tactile_ms':
+../Src/project.c:174:57: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  174 |         printf("[PI3] Tactile timeout (no press within %u ms)\n", window_ms);
+      |                                                        ~^         ~~~~~~~~~
+      |                                                         |         |
+      |                                                         |         uint32_t {aka long unsigned int}
+      |                                                         unsigned int
+      |                                                        %lu
+../Src/project.c:187:50: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  187 |         printf("[PI3] Tactile timeout (computed %u > %u)\n", t, window_ms);
+      |                                                 ~^           ~
+      |                                                  |           |
+      |                                                  |           uint32_t {aka long unsigned int}
+      |                                                  unsigned int
+      |                                                 %lu
+../Src/project.c:187:55: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  187 |         printf("[PI3] Tactile timeout (computed %u > %u)\n", t, window_ms);
+      |                                                      ~^         ~~~~~~~~~
+      |                                                       |         |
+      |                                                       |         uint32_t {aka long unsigned int}
+      |                                                       unsigned int
+      |                                                      %lu
+../Src/project.c:190:48: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  190 |     printf("[PI3] Tactile reaction captured = %u ms\n", t);
+      |                                               ~^        ~
+      |                                                |        |
+      |                                                |        uint32_t {aka long unsigned int}
+      |                                                unsigned int
+      |                                               %lu
+../Src/project.c: In function 'pi3_uart_send_result':
+../Src/project.c:202:37: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  202 |     printf("[PI3][UART %d bps] Rnd=%u, Wait=%u, Vis=%u, Tact=%u, Total=%u, Best=%u\n",
+      |                                    ~^
+      |                                     |
+      |                                     unsigned int
+      |                                    %lu
+  203 |            UART_BAUD, rnd, wait_ms, vis_ms, tact_ms, total_ms, best_ms);
+      |                       ~~~            
+      |                       |
+      |                       uint32_t {aka long unsigned int}
+../Src/project.c:202:46: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  202 |     printf("[PI3][UART %d bps] Rnd=%u, Wait=%u, Vis=%u, Tact=%u, Total=%u, Best=%u\n",
+      |                                             ~^
+      |                                              |
+      |                                              unsigned int
+      |                                             %lu
+  203 |            UART_BAUD, rnd, wait_ms, vis_ms, tact_ms, total_ms, best_ms);
+      |                            ~~~~~~~            
+      |                            |
+      |                            uint32_t {aka long unsigned int}
+../Src/project.c:202:54: warning: format '%u' expects argument of type 'unsigned int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  202 |     printf("[PI3][UART %d bps] Rnd=%u, Wait=%u, Vis=%u, Tact=%u, Total=%u, Best=%u\n",
+      |                                                     ~^
+      |                                                      |
+      |                                                      unsigned int
+      |                                                     %lu
+  203 |            UART_BAUD, rnd, wait_ms, vis_ms, tact_ms, total_ms, best_ms);
+      |                                     ~~~~~~            
+      |                                     |
+      |                                     uint32_t {aka long unsigned int}
+../Src/project.c:202:63: warning: format '%u' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  202 |     printf("[PI3][UART %d bps] Rnd=%u, Wait=%u, Vis=%u, Tact=%u, Total=%u, Best=%u\n",
+      |                                                              ~^
+      |                                                               |
+      |                                                               unsigned int
+      |                                                              %lu
+  203 |            UART_BAUD, rnd, wait_ms, vis_ms, tact_ms, total_ms, best_ms);
+      |                                             ~~~~~~~            
+      |                                             |
+      |                                             uint32_t {aka long unsigned int}
+../Src/project.c:202:73: warning: format '%u' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  202 |     printf("[PI3][UART %d bps] Rnd=%u, Wait=%u, Vis=%u, Tact=%u, Total=%u, Best=%u\n",
+      |                                                                        ~^
+      |                                                                         |
+      |                                                                         unsigned int
+      |                                                                        %lu
+  203 |            UART_BAUD, rnd, wait_ms, vis_ms, tact_ms, total_ms, best_ms);
+      |                                                      ~~~~~~~~            
+      |                                                      |
+      |                                                      uint32_t {aka long unsigned int}
+../Src/project.c:202:82: warning: format '%u' expects argument of type 'unsigned int', but argument 8 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  202 |     printf("[PI3][UART %d bps] Rnd=%u, Wait=%u, Vis=%u, Tact=%u, Total=%u, Best=%u\n",
+      |                                                                                 ~^
+      |                                                                                  |
+      |                                                                                  unsigned int
+      |                                                                                 %lu
+  203 |            UART_BAUD, rnd, wait_ms, vis_ms, tact_ms, total_ms, best_ms);
+      |                                                                ~~~~~~~            
+      |                                                                |
+      |                                                                uint32_t {aka long unsigned int}
+../Src/project.c: In function 'project_main':
+../Src/project.c:336:32: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  336 |         printf("\n----- Round %u -----\n", g_round_ix);
+      |                               ~^           ~~~~~~~~~~
+      |                                |           |
+      |                                |           uint32_t {aka long unsigned int}
+      |                                unsigned int
+      |                               %lu
+../Src/project.c:340:36: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  340 |     printf("\nBest total so far = %u ms\n", g_best_total_ms);
+      |                                   ~^        ~~~~~~~~~~~~~~~
+      |                                    |        |
+      |                                    |        uint32_t {aka long unsigned int}
+      |                                    unsigned int
+      |                                   %lu
+arm-none-eabi-gcc -o "project_try.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/project_try/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_try.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(libc_a-gettimeofdayr.o): in function `_gettimeofday_r':
+(.text._gettimeofday_r+0xe): warning: _gettimeofday is not implemented and will always fail
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/libc_nano.a(libc_a-gettimeofdayr.o): note: the message above does not take linker garbage collection into account
+Finished building target: project_try.elf
  
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+arm-none-eabi-size  project_try.elf 
+arm-none-eabi-objdump -h -S project_try.elf  > "project_try.list"
    text	   data	    bss	    dec	    hex	filename
-   1132	      0	   1568	   2700	    a8c	secondProject.elf
+    972	      0	   1568	   2540	    9ec	project_try.elf
 Finished building: default.size.stdout
  
-Finished building: secondProject.list
+Finished building: project_try.list
  
-22:36:11 **** Incremental Build of configuration Debug for project secondProject ****
+01:10:41 **** Incremental Build of configuration Debug for project project_try ****
 make -j11 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/new_experiment_template.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/new_experiment_template.d" -MT"Src/new_experiment_template.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/new_experiment_template.o"
-arm-none-eabi-gcc "../Src/playground.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/playground.d" -MT"Src/playground.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/playground.o"
-arm-none-eabi-gcc "../Src/simple_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/simple_experiment.d" -MT"Src/simple_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/simple_experiment.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
+arm-none-eabi-size  project_try.elf 
    text	   data	    bss	    dec	    hex	filename
-   1040	      0	   1568	   2608	    a30	secondProject.elf
+    972	      0	   1568	   2540	    9ec	project_try.elf
 Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-22:37:36 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/simple_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/simple_experiment.d" -MT"Src/simple_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/simple_experiment.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-   1036	      0	   1568	   2604	    a2c	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-22:39:56 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/simple_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/simple_experiment.d" -MT"Src/simple_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/simple_experiment.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-   1020	      0	   1568	   2588	    a1c	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-22:40:26 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-   1020	      0	   1568	   2588	    a1c	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-23:13:38 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/simple_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/simple_experiment.d" -MT"Src/simple_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/simple_experiment.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-    976	      0	   1568	   2544	    9f0	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-23:21:54 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-    872	      0	   1568	   2440	    988	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-23:43:36 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-    872	      0	   1568	   2440	    988	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-23:43:56 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-    976	      0	   1568	   2544	    9f0	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-23:51:53 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-    976	      0	   1568	   2544	    9f0	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-23:56:27 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-   1024	      0	   1568	   2592	    a20	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-00:02:25 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-    976	      0	   1568	   2544	    9f0	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-00:05:43 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-    872	      0	   1568	   2440	    988	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-00:07:19 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-    976	      0	   1568	   2544	    9f0	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-00:14:01 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-   1104	      0	   1568	   2672	    a70	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-00:17:28 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/breadboard_experiment.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/breadboard_experiment.d" -MT"Src/breadboard_experiment.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/breadboard_experiment.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-    932	      0	   1568	   2500	    9c4	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
- 
-00:18:12 **** Incremental Build of configuration Debug for project secondProject ****
-make -j11 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m33 -std=gnu11 -g3 -DDEBUG -DNUCLEO_L552ZE_Q -DSTM32 -DSTM32L5 -DSTM32L552ZETxQ -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "secondProject.elf" @"objects.list"   -mcpu=cortex-m33 -T"/Users/mcan/cmpe443-1/secondProject/STM32L552ZETXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="secondProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: secondProject.elf
- 
-arm-none-eabi-size  secondProject.elf 
-arm-none-eabi-objdump -h -S secondProject.elf  > "secondProject.list"
-   text	   data	    bss	    dec	    hex	filename
-   1032	      0	   1568	   2600	    a28	secondProject.elf
-Finished building: default.size.stdout
- 
-Finished building: secondProject.list
  

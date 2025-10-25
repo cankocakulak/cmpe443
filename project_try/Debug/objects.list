@@ -1,0 +1,8 @@
+"./Src/main.o"
+"./Src/practice1_gpio.o"
+"./Src/practice2_timers.o"
+"./Src/practice3_adc.o"
+"./Src/project.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32l552zetxq.o"

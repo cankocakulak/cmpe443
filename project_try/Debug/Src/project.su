@@ -1,0 +1,17 @@
+../Src/project.c:46:17:clamp	24	static
+../Src/project.c:60:5:pi1_button_pressed	8	static
+../Src/project.c:68:10:pi1_compute_random_wait_ms	24	static
+../Src/project.c:79:6:pi1_stim_on_led_and_vibe	8	static
+../Src/project.c:85:6:pi1_7seg_show_msg	16	static
+../Src/project.c:91:6:pi1_7seg_show_ms	16	static
+../Src/project.c:117:5:visual_sensor_output	24	static
+../Src/project.c:129:5:tactile_sensor_output	24	static
+../Src/project.c:142:10:pi2_capture_visual_ms	24	static
+../Src/project.c:160:10:pi3_read_pressure_adc	16	static
+../Src/project.c:169:10:pi3_capture_tactile_ms	24	static
+../Src/project.c:195:6:pi3_uart_send_result	40	static
+../Src/project.c:210:6:state_to_idle	8	static
+../Src/project.c:215:6:state_to_abort	8	static
+../Src/project.c:221:6:state_to_feedback	8	static
+../Src/project.c:230:6:run_one_round	56	static
+../Src/project.c:326:5:project_main	8	static
